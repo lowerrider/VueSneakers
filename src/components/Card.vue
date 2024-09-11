@@ -3,6 +3,7 @@
     class="relative bg-white border border-slate-100 rounded-3xl p-8 cursor-pointer hover:-translate-y-2 hover:shadow-xl transition"
   >
     <img
+      v-if="onClickFavorite"
       @click="onClickFavorite"
       class="absolute top-8 left-8"
       :src="!isFavorite ? '/like-1.svg' : '/like-2.svg'"
@@ -17,6 +18,7 @@
         <b>{{ price }} руб.</b>
       </div>
       <img
+        v-if="onClickAdd"
         @click="onClickAdd"
         :src="!isAded ? '/plus.svg' : '/checked.svg'"
         alt="Plus"
@@ -27,7 +29,7 @@
 
 <script setup>
 import { inject } from "vue";
-const props = defineProps({
+defineProps({
   id: Number,
   imageUrl: String,
   title: String,

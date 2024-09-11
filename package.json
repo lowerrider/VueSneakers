@@ -9,8 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
     "axios": "^1.7.7",
-    "vue": "^3.4.29"
+    "vue": "^3.4.29",
+    "vue-router": "^4.4.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
