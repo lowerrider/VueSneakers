@@ -9,7 +9,7 @@ import Favorites from "./pages/Favorites.vue";
 const app = createApp(App);
 
 const routes = [
-  { path: "/", name: "Home", component: Home },
+  { path: "/VueSneakers", name: "Home", component: Home },
   { path: "/favorites", name: "Favorites", component: Favorites },
 ];
 
