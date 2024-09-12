@@ -6,7 +6,7 @@
       v-if="onClickFavorite"
       @click="onClickFavorite"
       class="absolute top-8 left-8"
-      :src="!isFavorite ? '/like-1.svg' : '/like-2.svg'"
+      :src="!isFavorite ? '/VueSneakers/like-1.svg' : '/VueSneakers/like-2.svg'"
       alt="like 2"
     />
     <img :src="imageUrl" alt="sneaker" />
@@ -20,7 +20,7 @@
       <img
         v-if="onClickAdd"
         @click="onClickAdd"
-        :src="!isAded ? '/plus.svg' : '/checked.svg'"
+        :src="!isAded ? '/VueSneakers/plus.svg' : '/VueSneakers/checked.svg'"
         alt="Plus"
       />
     </div>
@@ -28,7 +28,6 @@
 </template>
 
 <script setup>
-import { inject } from "vue";
 defineProps({
   id: Number,
   imageUrl: String,
